@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="*{titulo}">Hello</title>
+</head>
+<body  >
+<span th:text="*{titulo}"></span>
+<br>
+<table>
+    <span th:text="${usuario.nombre}"></span>
+    <br>
+    <span th:text="${usuario.apellido}"></span>
+    <br>
+    <span th:if="${usuario.email}"></span>
+    <span th:if="${usuario.email == null}" th:text="'el usuario no tiene correo'"></span>
+</tr>
+</table>
+</body>
+</html>

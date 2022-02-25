@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <title th:text="*{titulo}">Hello</title> -->
+    <title>Enviar parametros el Request HTTTP  GET - URL</title>
+  </head>
+  <body>
+    <h1>Enviar parametros el Request HTTTP  GET - URL</h1>
+    <ul>
+      <li>
+        <a th:href="@{/params/string(texto='Hola Andres')}">Hola andres</a>
+        <a th:href="@{/params/string(texto='Que tal John')}">Que tal John</a>
+        <a th:href="@{/params/mix-params(saludo='Como estas and', numero=7)}">mix-params</a>
+        <a th:href="@{/params/mix-params-request(saludo='como estas and', numero=7)}">mix-params-request</a>
+      </li>
+    </ul>
+  </body>
+</html>

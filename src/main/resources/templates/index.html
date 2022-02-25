@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title th:text="*{titulo}">Hello</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+    <!-- <title>Hello</title> -->
+  </head>
+  <body>
+
+<h1 class="color-rojo" th:text="${titulo}"></h1>
+<h2 class="color-azul" >Decorand con estilos css recursos estaticos</h2>
+
+<img th:src="@{/images/dice.png}"></img>
+
+    <!-- <span th:text="*{titulo}"></span>
+    <table>
+      <tr th:each="message : *{messages}">
+        <td th:text="*{message}">1</td>
+      </tr>
+    </table>
+    <table th:if="${usuarios.size()>0}">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="usuario: ${usuarios}">
+          <td th:text="${usuario.nombre}"></td>
+          <td th:text="${usuario.apellido}"></td>
+          <td th:text="${usuario.email}"></td>
+        </tr>
+      </tbody>
+    </table> -->
+
+  </body>
+</html>
